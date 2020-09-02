@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import Todo from './components/Todo';
+import AddForm from './components/AddForm';
 
 function App() {
   const [todos, setTodos] = useState([
@@ -18,10 +19,16 @@ function App() {
     },
   ]);
 
+  const addTodo = (text) => {
+    const newTodos = [...todos, { text }];
+    setTodos(newTodos);
+  };
+
   return (
     <div className='app'>
       <h1>Let's Build a Todo App🚀❗️</h1>
       <Todo todos={todos} />
+      <AddForm addTodo={addTodo} />
     </div>
   );
 }
