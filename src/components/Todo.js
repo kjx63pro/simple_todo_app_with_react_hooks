@@ -7,11 +7,13 @@ const Todo = ({ todos, deleteTodo, completeTodo }) => {
   return (
     <div className='todo'>
       {todos.length == 0 ? (
-        <p>
-          There is no Todo at the moment.
-          <br />
-          Please Add your Todo...
-        </p>
+        <div className='todo__whenNothingtoList'>
+          <p>
+            There is no Todo at the moment.
+            <br />
+            Please Add New Todo...
+          </p>
+        </div>
       ) : (
         <div>
           {todos.map((todo, index) => (

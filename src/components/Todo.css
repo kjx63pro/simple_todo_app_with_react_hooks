@@ -21,3 +21,9 @@
 .todo__isCompleted {
   text-decoration: line-through;
 }
+
+.todo__whenNothingtoList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
