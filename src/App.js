@@ -24,10 +24,16 @@ function App() {
     setTodos(newTodos);
   };
 
+  const deleteTodo = (index) => {
+    const newTodos = [...todos];
+    newTodos.splice(index, 1);
+    setTodos(newTodos);
+  };
+
   return (
     <div className='app'>
       <h2>Simle Todo App with React Hooks🚀❗️</h2>
-      <Todo todos={todos} />
+      <Todo todos={todos} deleteTodo={deleteTodo} />
       <hr />
       <AddForm addTodo={addTodo} />
     </div>

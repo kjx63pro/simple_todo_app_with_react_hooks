@@ -3,14 +3,18 @@ import './Todo.css';
 
 import { Button } from '@material-ui/core';
 
-const Todo = ({ todos }) => {
+const Todo = ({ todos, deleteTodo }) => {
   return (
     <div className='todo'>
       {todos.map((todo, index) => (
         <div className='todo__list'>
           <p>{todo.text}</p>
           <div className='todo__button'>
-            <Button variant='contained' color='secondary'>
+            <Button
+              onClick={() => deleteTodo(index)}
+              variant='contained'
+              color='secondary'
+            >
               Delete
             </Button>
           </div>
