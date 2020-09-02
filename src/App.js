@@ -26,8 +26,9 @@ function App() {
 
   return (
     <div className='app'>
-      <h1>Let's Build a Todo App🚀❗️</h1>
+      <h2>Simle Todo App with React Hooks🚀❗️</h2>
       <Todo todos={todos} />
+      <hr />
       <AddForm addTodo={addTodo} />
     </div>
   );
