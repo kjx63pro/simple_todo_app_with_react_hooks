@@ -17,3 +17,7 @@
 .todo__button {
   margin-right: 0;
 }
+
+.todo__isCompleted {
+  text-decoration: line-through;
+}
