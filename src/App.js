@@ -38,7 +38,7 @@ function App() {
 
   return (
     <div className='app'>
-      <h2>Simle Todo App with React Hooks🚀❗️</h2>
+      <h2>Simle Todo App with React Hooks🚀</h2>
       <Todo todos={todos} deleteTodo={deleteTodo} completeTodo={completeTodo} />
       <hr />
       <AddForm addTodo={addTodo} />
