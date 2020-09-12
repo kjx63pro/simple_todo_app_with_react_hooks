@@ -6,7 +6,7 @@ import { Button } from '@material-ui/core';
 const Todo = ({ todos, deleteTodo, completeTodo }) => {
   return (
     <div className='todo'>
-      {todos.length == 0 ? (
+      {todos.length === 0 ? (
         <div className='todo__whenNothingtoList'>
           <p>
             There is no Todo at the moment.

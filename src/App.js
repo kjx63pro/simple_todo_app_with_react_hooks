@@ -32,13 +32,18 @@ function App() {
 
   const completeTodo = (index) => {
     const newTodos = [...todos];
-    newTodos[index].isCompleted = true;
+    newTodos[index].isCompleted = !newTodos[index].isCompleted;
     setTodos(newTodos);
   };
 
   return (
     <div className='app'>
-      <h2>Simle Todo App with React Hooks🚀</h2>
+      <h2>
+        Simple Todo App with React Hooks{' '}
+        <span role='img' aria-label='rocket'>
+          🚀
+        </span>{' '}
+      </h2>
       <Todo todos={todos} deleteTodo={deleteTodo} completeTodo={completeTodo} />
       <hr />
       <AddForm addTodo={addTodo} />
