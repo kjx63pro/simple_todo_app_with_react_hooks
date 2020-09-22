@@ -10,7 +10,7 @@ Use the app online at [https://simple-todo-with-react.web.app/](https://simple-t
 ## Quick Start
 
 ```
-Install all npm pachages used in this app
+Install all npm packages used in this app
 
 $ npm install
 
